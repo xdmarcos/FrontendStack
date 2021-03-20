@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
   name: "FrontendStackStyle",
+  platforms: [
+    .iOS(.v11), .tvOS(.v11),
+  ],
   products: [
     .library(name: "FrontendStackStyle", targets: ["FrontendStackStyle"]),
   ],

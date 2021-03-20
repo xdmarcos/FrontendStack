@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FrontendStack_FrontendStack"
-               BuildableName = "FrontendStack_FrontendStack"
-               BlueprintName = "FrontendStack_FrontendStack"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FrontendStack"
-               BuildableName = "FrontendStack"
-               BlueprintName = "FrontendStack"
+               BlueprintIdentifier = "FrontendStackStyle"
+               BuildableName = "FrontendStackStyle"
+               BlueprintName = "FrontendStackStyle"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FrontendStackTests"
-               BuildableName = "FrontendStackTests"
-               BlueprintName = "FrontendStackTests"
+               BlueprintIdentifier = "FrontendStackStyleTests"
+               BuildableName = "FrontendStackStyleTests"
+               BlueprintName = "FrontendStackStyleTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FrontendStackTests"
-               BuildableName = "FrontendStackTests"
-               BlueprintName = "FrontendStackTests"
+               BlueprintIdentifier = "FrontendStackStyleTests"
+               BuildableName = "FrontendStackStyleTests"
+               BlueprintName = "FrontendStackStyleTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -88,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FrontendStack_FrontendStack"
-            BuildableName = "FrontendStack_FrontendStack"
-            BlueprintName = "FrontendStack_FrontendStack"
+            BlueprintIdentifier = "FrontendStackStyle"
+            BuildableName = "FrontendStackStyle"
+            BlueprintName = "FrontendStackStyle"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
