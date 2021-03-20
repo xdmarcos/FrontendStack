@@ -1,12 +1,12 @@
 import XCTest
-@testable import FrontendStack
+@testable import FrontendStackStyle
 
-final class FrontendStackTests: XCTestCase {
+final class FrontendStackStyleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(FrontendStack().text, "Hello, World!")
+        XCTAssertEqual(FrontendStackStyle().text, "Hello, World!")
     }
 
     static var allTests = [

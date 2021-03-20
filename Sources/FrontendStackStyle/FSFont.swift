@@ -1,6 +1,6 @@
 //
 //  FSFont.swift
-//  FrontendStack
+//  FrontendStackStyle
 //
 //  Created by xdmgzdev on 23/02/2021.
 //

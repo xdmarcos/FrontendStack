@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-  name: "FrontendStack",
+  name: "FrontendStackStyle",
   products: [
-    .library(name: "FrontendStack", targets: ["FrontendStack"]),
+    .library(name: "FrontendStackStyle", targets: ["FrontendStackStyle"]),
   ],
   targets: [
     .target(
-      name: "FrontendStack",
+      name: "FrontendStackStyle",
       dependencies: [],
       resources: [.process("Resources")]
     ),
     .testTarget(
-      name: "FrontendStackTests",
-      dependencies: ["FrontendStack"]
+      name: "FrontendStackStyleTests",
+      dependencies: ["FrontendStackStyle"]
     ),
   ]
 )
