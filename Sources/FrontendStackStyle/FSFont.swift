@@ -7,7 +7,7 @@
 
 import UIKit
 
-public enum FSFont {
+public enum FSFont {  
   static func black(_ ofSize: CGFloat) -> UIFont {
     return Self.loadFont(name: "Roboto-Black", size: ofSize)
   }
