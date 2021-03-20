@@ -15,17 +15,18 @@ public class FontLoader {
 
   public func registerFonts() {
     let customFonts = [
-      "Myriad-Italic.ttf",
-      "Myriad-Light.ttf",
-      "Myriad-SemiBold.ttf",
-      "Myriad.ttf",
-      "MyriadPro-Bold.otf",
-      "MyriadPro-BoldIt.otf",
-      "MyriadPro-It.otf",
-      "MyriadPro-Light.otf",
-      "MyriadPro-Regular.otf",
-      "MyriadPro-Semibold.otf",
-      "MyriadPro-SemiboldIt.otf"
+      "Roboto-Black.ttf",
+      "Roboto-BlackItalic.ttf",
+      "Roboto-Bold.ttf",
+      "Roboto-BoldItalic.ttf",
+      "Roboto-Italic.ttf",
+      "Roboto-Light.ttf",
+      "Roboto-LightItalic.ttf",
+      "Roboto-Medium.ttf",
+      "Roboto-MediumItalic.ttf",
+      "Roboto-Regular.ttf",
+      "Roboto-Thin.ttf",
+      "Roboto-ThinItalic.ttf"
     ]
 
     for fontName in customFonts {

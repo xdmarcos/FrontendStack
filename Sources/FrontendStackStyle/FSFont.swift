@@ -7,68 +7,60 @@
 
 import UIKit
 
-public struct FSFont {
-  public static func lightProFont(_ ofSize: CGFloat) -> UIFont {
-    guard let lightFont = UIFont(name: "MyriadPro-Light", size: ofSize) else {
-      fatalError("MyriadPro-Light font not added to project")
-    }
-    return lightFont
+public enum FSFont {
+  static func black(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-Black", size: ofSize)
   }
 
-  public static func boldProFont(_ ofSize: CGFloat) -> UIFont {
-    guard let lightFont = UIFont(name: "MyriadPro-Bold", size: ofSize) else {
-      fatalError("MyriadPro-Bold font not added to project")
-    }
-    return lightFont
+  static func blackItalic(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-BlackItalic", size: ofSize)
   }
 
-  public static func lightFont(_ ofSize: CGFloat) -> UIFont {
-    guard let lightFont = UIFont(name: "Myriad-Light", size: ofSize) else {
-      fatalError("Myriad-Light font not added to project")
-    }
-    return lightFont
+  static func bold(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-Bold", size: ofSize)
   }
 
-  @available(
-    *,
-    unavailable,
-    message: "Part of RFS but not used in project. Please add font first and remove this message before using lightItalicFont" // swiftlint:disable:this line_length
-  )
-  public static func lightItalicFont(_: CGFloat) -> UIFont {
-    fatalError("Part of RFS but not used in project. Please add font first and remove this message before using lightItalicFont") // swiftlint:disable:this line_length
+  static func boldItalic(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-BoldItalic", size: ofSize)
   }
 
-  public static func regularFont(_ ofSize: CGFloat) -> UIFont {
-    guard let regularFont = UIFont(name: "MyriadPro-Regular", size: ofSize) else {
-      fatalError("MyriadPro-Regular font not added to project")
-    }
-    return regularFont
+  static func italic(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-Italic", size: ofSize)
   }
 
-  public static func italicFont(_ ofSize: CGFloat) -> UIFont {
-    guard let italicFont = UIFont(name: "Myriad-Italic", size: ofSize) else {
-      fatalError("Myriad-Italic font not added to project")
-    }
-    return italicFont
+  static func light(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-Light", size: ofSize)
   }
 
-  public static func boldItalicFont(_ ofSize: CGFloat) -> UIFont {
-    guard let font = UIFont(name: "MyriadPro-BoldIt", size: ofSize) else {
-      fatalError("MyriadPro-BoldIt font not added to project")
-    }
-    return font
+  static func lightItalic(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-LightItalic", size: ofSize)
   }
 
-  public static func semiBoldFont(_ ofSize: CGFloat) -> UIFont {
-    guard let semiBoldFont = UIFont(name: "Myriad-SemiBold", size: ofSize) else {
-      fatalError("Myriad-SemiBold font not added to project")
-    }
-    return semiBoldFont
+  static func medium(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-Medium", size: ofSize)
   }
 
-  public static func semiBoldItalicFont(_ ofSize: CGFloat) -> UIFont {
-    guard let font = UIFont(name: "MyriadPro-SemiboldIt", size: ofSize) else {
-      fatalError("MyriadPro-SemiboldIt italic font not added to project")
+  static func mediumItalic(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-MediumItalic", size: ofSize)
+  }
+
+  static func regular(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-Regular", size: ofSize)
+  }
+
+  static func thin(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-Thin", size: ofSize)
+  }
+
+  static func thinItalic(_ ofSize: CGFloat) -> UIFont {
+    return Self.loadFont(name: "Roboto-ThinItalic", size: ofSize)
+  }
+}
+
+private extension FSFont {
+  static func loadFont(name: String, size: CGFloat) -> UIFont {
+    guard let font = UIFont(name: name, size: size) else {
+      fatalError("\(name) font not added to project.")
     }
     return font
   }

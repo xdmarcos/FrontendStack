@@ -13,21 +13,18 @@ public struct FSTextStyle {
 }
 
 public extension FSTextStyle {
-  static let h1 = FSTextStyle(font: FSFont.lightFont(40), color: FSColor.primaryAlternative)
-  static let h2 = FSTextStyle(font: FSFont.lightFont(25), color: FSColor.primaryAlternative)
-  static let h3 = FSTextStyle(font: FSFont.regularFont(19), color: FSColor.primaryAlternative)
-  static let h4 = FSTextStyle(font: FSFont.semiBoldFont(16), color: FSColor.text)
-  static let h4Small = FSTextStyle(font: FSFont.semiBoldFont(14), color: FSColor.text)
+  static let h1 = FSTextStyle(font: FSFont.light(40), color: FSColor.primaryAlternative)
+  static let h2 = FSTextStyle(font: FSFont.light(25), color: FSColor.primaryAlternative)
+  static let h3 = FSTextStyle(font: FSFont.regular(19), color: FSColor.primaryAlternative)
+  static let h4 = FSTextStyle(font: FSFont.bold(16), color: FSColor.text)
+  static let h4Small = FSTextStyle(font: FSFont.bold(14), color: FSColor.text)
 
-  static let body = FSTextStyle(font: FSFont.regularFont(16), color: FSColor.text)
-  static let bodySmall = FSTextStyle(font: FSFont.regularFont(14), color: FSColor.text)
-  static let bodyStrong = FSTextStyle(font: FSFont.semiBoldFont(16), color: FSColor.text)
-  static let bodyStrongSmall = FSTextStyle(font: FSFont.semiBoldFont(14), color: FSColor.text)
-  static let bodyEmphasised = FSTextStyle(font: FSFont.italicFont(16), color: FSColor.text)
-  static let bodyEmphasisedSmall = FSTextStyle(font: FSFont.italicFont(14), color: FSColor.text)
-  static let bodyLight = FSTextStyle(font: FSFont.regularFont(16), color: FSColor.textSubtleDark)
-  static let bodyLightSmall = FSTextStyle(
-    font: FSFont.regularFont(14),
-    color: FSColor.textSubtleDark
-  )
+  static let body = FSTextStyle(font: FSFont.regular(16), color: FSColor.text)
+  static let bodySmall = FSTextStyle(font: FSFont.regular(14), color: FSColor.text)
+  static let bodyStrong = FSTextStyle(font: FSFont.bold(16), color: FSColor.text)
+  static let bodyStrongSmall = FSTextStyle(font: FSFont.bold(14), color: FSColor.text)
+  static let bodyEmphasised = FSTextStyle(font: FSFont.italic(16), color: FSColor.text)
+  static let bodyEmphasisedSmall = FSTextStyle(font: FSFont.italic(14), color: FSColor.text)
+  static let bodyLight = FSTextStyle(font: FSFont.regular(16), color: FSColor.textSubtleDark)
+  static let bodyLightSmall = FSTextStyle(font: FSFont.regular(14), color: FSColor.textSubtleDark)
 }
