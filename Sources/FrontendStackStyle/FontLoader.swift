@@ -10,8 +10,17 @@ import CoreText
 import Foundation
 
 public class FontLoader {
-  public static let shared = FontLoader()
-  public let fontBundle = Bundle.module
+  private let fontBundle: Bundle
+
+  /// Returns an instance of the FontLoader class.
+  /// - Parameter fontBundle: A bundle with fonts. When nil the Bundle.module value will be used.
+  public init(fontBundle: Bundle? = nil) {
+    if let fontBundle = fontBundle {
+      self.fontBundle = fontBundle
+    } else {
+      self.fontBundle = .module
+    }
+  }
 
   public func registerFonts() {
     let customFonts = [
