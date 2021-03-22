@@ -49,8 +49,18 @@ public class FontLoader {
 
     var error: Unmanaged<CFError>?
     guard CTFontManagerRegisterGraphicsFont(font, &error) else {
-      print("Error registering font \(fontName): \(String(describing: error))")
-      return
+      guard let error: Error = error?.takeRetainedValue() else {
+        throw FontLoaderError.failedToRegisterFont(fontName, nil)
+      }
+
+      let nsError = error as NSError
+      if nsError.code == CTFontManagerError.alreadyRegistered.rawValue,
+         nsError.domain == kCTFontManagerErrorDomain as String {
+        // Continue if already registered
+        return
+      }
+
+      throw FontLoaderError.failedToRegisterFont(fontName, error)
     }
   }
 }
