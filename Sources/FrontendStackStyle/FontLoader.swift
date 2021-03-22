@@ -9,6 +9,13 @@ import CoreGraphics
 import CoreText
 import Foundation
 
+public enum FontLoaderError: Error {
+  case fontDoesNotExist(String)
+  case failedToLoadFont(String)
+  case failedToCreateFont(String)
+  case failedToRegisterFont(String, Error?)
+}
+
 public class FontLoader {
   private let fontBundle: Bundle
 
@@ -22,7 +29,7 @@ public class FontLoader {
     }
   }
 
-  public func registerFonts() {
+  public func registerFonts() throws {
     let customFonts = [
       "Roboto-Black.ttf",
       "Roboto-BlackItalic.ttf",
@@ -39,11 +46,11 @@ public class FontLoader {
     ]
 
     for fontName in customFonts {
-      registerFontWithName(fontName: fontName)
+      try registerFontWithName(fontName: fontName)
     }
   }
 
-  private func registerFontWithName(fontName: String) {
+  private func registerFontWithName(fontName: String) throws {
     guard let fontURL = fontBundle.url(forResource: fontName, withExtension: nil) else {
       fatalError("Couldn't find font \(fontName)")
     }
